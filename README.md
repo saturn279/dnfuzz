@@ -15,3 +15,7 @@ Subdomain and hidden directory checking tool with multithreading support.
     -subs                                Text file with list of subdomains [subslist.txt]
     -dir                                 Text file with list of directories [dirslist.txt]
     -P                                   Number of threads for xargs
+# Examples
+
+![Terminal](https://github.com/saturn279/dnfuzz/raw/main/screenshots/examples.png)
+![htop](https://github.com/saturn279/dnfuzz/raw/main/screenshots/htop.png)
