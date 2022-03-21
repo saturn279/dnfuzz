@@ -5,6 +5,14 @@ Subdomain and hidden directory checking tool with multithreading support.
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/saturn279/dnfuzz/main/install.sh)"
     
+OR 
+
+    git clone https://github.com/saturn279/dnfuzz
+    cd dnfuzz
+    bash ./dnfuzz -d github.com -subs ./wordlists/subslist.txt -dir ./wordlists/dirslist.txt -P 500 
+
+    
+    
 # Description
   **dnfuzz** is an command line script for recon which can search through a list of subdomains while performing directory fuzzing.
     
