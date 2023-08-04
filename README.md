@@ -1,5 +1,9 @@
-
 # dnfuzz - Subdomain and Hidden Directory Checking Tool
+
+<p align="center">
+  <img src="https://github.com/saturn279/dnfuzz/assets/45988700/a9e63571-3b85-484e-8bf6-b663fa03dc7a" alt="dnfuzz Logo" width="300">
+</p>
+
 
 `dnfuzz` is a command-line script designed for reconnaissance tasks, allowing you to search for subdomains and perform directory fuzzing on a given domain. This tool supports multithreading for faster execution.
 
@@ -47,8 +51,17 @@ dnfuzz -d <domain> -subs <subdomain_list> -dir <directory_list> -P <threadcount>
 
 Check out these examples to see `dnfuzz` in action:
 
-![Terminal Example](https://github.com/saturn279/dnfuzz/raw/main/screenshots/examples.png)
-![htop Example](https://github.com/saturn279/dnfuzz/raw/main/screenshots/htop.png)
+<p align="center">
+  <img src="https://github.com/saturn279/dnfuzz/raw/main/screenshots/examples.png" alt="dnfuzz Examples">
+</p>
+
+## Multithreading Performance
+
+`dnfuzz` takes advantage of multithreading for improved performance:
+
+<p align="center">
+  <img src="https://github.com/saturn279/dnfuzz/raw/main/screenshots/htop.png" alt="htop Example">
+</p>
 
 ## Contribution
 
