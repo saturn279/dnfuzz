@@ -1,29 +1,59 @@
-# dnfuzz
-Subdomain and hidden directory checking tool with multithreading support.
 
-# Installation
+# dnfuzz - Subdomain and Hidden Directory Checking Tool
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/saturn279/dnfuzz/main/install.sh)"
-    
-OR 
+`dnfuzz` is a command-line script designed for reconnaissance tasks, allowing you to search for subdomains and perform directory fuzzing on a given domain. This tool supports multithreading for faster execution.
 
-    git clone https://github.com/saturn279/dnfuzz
-    cd dnfuzz
-    bash ./dnfuzz -d github.com -subs ./wordlists/subslist.txt -dir ./wordlists/dirslist.txt -P 500 
+## Installation
 
-    
-    
-# Description
-  **dnfuzz** is an command line script for recon which can search through a list of subdomains while performing directory fuzzing.
-    
-    dnfuzz -d <domain> -subs <subdomain_list> -dir <directory_list> -P <threadcount> 
-# Options
-    -h                                   Print this help text and exit
-    -d                                   Domain name [example.com] 
-    -subs                                Text file with list of subdomains [subslist.txt]
-    -dir                                 Text file with list of directories [dirslist.txt]
-    -P                                   Number of threads for xargs
-# Examples
+You can install `dnfuzz` using the following methods:
 
-![Terminal](https://github.com/saturn279/dnfuzz/raw/main/screenshots/examples.png)
-![htop](https://github.com/saturn279/dnfuzz/raw/main/screenshots/htop.png)
+### Method 1: Using the Installation Script
+
+Run the following command in your terminal to install `dnfuzz` using the installation script:
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/saturn279/dnfuzz/main/install.sh)"
+```
+
+### Method 2: Manual Installation
+
+Alternatively, you can clone the repository and run `dnfuzz` directly:
+
+```sh
+git clone https://github.com/saturn279/dnfuzz
+cd dnfuzz
+bash ./dnfuzz -d github.com -subs ./wordlists/subslist.txt -dir ./wordlists/dirslist.txt -P 500
+```
+
+## Description
+
+`dnfuzz` is a versatile script that enhances your reconnaissance efforts by searching through a list of subdomains while simultaneously performing directory fuzzing on those subdomains.
+
+### Usage
+
+```sh
+dnfuzz -d <domain> -subs <subdomain_list> -dir <directory_list> -P <threadcount>
+```
+
+#### Options
+
+- `-h`: Print help text and exit
+- `-d`: Domain name (e.g., example.com)
+- `-subs`: Text file with a list of subdomains (default: subslist.txt)
+- `-dir`: Text file with a list of directories (default: dirslist.txt)
+- `-P`: Number of threads for parallel processing
+
+## Examples
+
+Check out these examples to see `dnfuzz` in action:
+
+![Terminal Example](https://github.com/saturn279/dnfuzz/raw/main/screenshots/examples.png)
+![htop Example](https://github.com/saturn279/dnfuzz/raw/main/screenshots/htop.png)
+
+## Contribution
+
+Contributions are welcome! If you find any issues or want to enhance the tool, feel free to submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
